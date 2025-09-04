@@ -18,6 +18,7 @@
     text-align: center;
     font-size: 20px;
     word-wrap: break-word;
+    color: var(--other-text-color);
 }
 
 .main-info-open-modal-btn {
@@ -27,7 +28,6 @@
     font-size: 16px;
     font-weight: 500;
     border-radius: 6px;
-    margin-top: 40px;
 }
 
 .main-info-open-modal-btn:hover {
@@ -92,6 +92,29 @@
     z-index: 1;
 }
 
+.main-info-btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.main-info-more {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.main-info-more:hover {
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.fa-solid {}
+
+.fa-arrow-right {}
+
 @media (max-width: 600px) {
     .main-info-title {
         font-size: 36px;
@@ -109,5 +132,9 @@
 
     .main-info-description {
         font-size: 14px;
+    }
+
+    .main-info-btns {
+        flex-direction: column;
     }
 }
