@@ -74,6 +74,9 @@ body {
         sans-serif;
 }
 
+img {
+    border-radius: 15px;
+}
 
 .content {
     max-width: 1350px;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Drivemaster - О нас</title>
@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="../styles/main.css" />
 		<link rel="stylesheet" href="../styles/header.css" />
 		<link rel="stylesheet" href="../styles/main-info.css" />
+		<link rel="stylesheet" href="../styles/about-us.css" />
 		<link rel="stylesheet" href="../styles/search-car.css" />
 		<link rel="stylesheet" href="../styles/footer.css" />
 
@@ -20,15 +21,15 @@
 
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
-<body>
-    	<header class="header">
+	</head>
+	<body>
+		<header class="header">
 			<div class="header-title"><a href="index.html">Drivemaster</a></div>
 
 			<nav class="header-menu">
 				<div class="menu-item"><a href="services.html">Услуги</a></div>
-				<div class="menu-item"><a href="">О нас</a></div>
-				<div class="menu-item"><a href="">Контакты</a></div>
+				<div class="menu-item"><a href="about-us.html">О нас</a></div>
+				<div class="menu-item"><a href="contacts.html">Контакты</a></div>
 			</nav>
 
 			<div id="toggle-theme" class="toggle-theme">
@@ -40,17 +41,83 @@
 			</div>
 		</header>
 
+		<main class="content">
+			<svg class="rectangles" width="404" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-squares">
+				<title id="svg-squares">squares</title>
+				<defs>
+					<pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+						<rect x="0" y="0" width="4" height="4" class="text-primary" fill="currentColor"></rect>
+					</pattern>
+				</defs>
+				<rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"></rect>
+			</svg>
+
+			<div class="main-info">
+				<div class="main-info-title">О нас</div>
+				<div class="main-info-description">Drivemaster - это команда профессионалов, которые предлагают уникальные услуги по подбору автомобилей. Мы стремимся сделать процесс подбора автомобиля простым и удобным для всех клиентов</div>
+
+				<div class="client-trust-card">
+					<div class="client-trust-card-title">Доверие клиентов</div>
+					<div class="client-trust-card-desciption">Мы гордимся тем, что наши клиенты доверяют нам в выборе автомобилей. Мы всегда стремимся предоставить лучший сервис.</div>
+					<div class="client-trust-card-stars">
+						<i class="fa-sharp fa-solid fa-star"></i>
+						<i class="fa-sharp fa-solid fa-star"></i>
+						<i class="fa-sharp fa-solid fa-star"></i>
+						<i class="fa-sharp fa-solid fa-star"></i>
+						<i class="fa-sharp fa-solid fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="our-beliefs-card">
+				<div class="our-beliefs-card-text">
+					<div class="our-beliefs-card-title">Наши убеждения</div>
+					<div class="our-beliefs-card-desciption">
+						Мы верим в качественный сервис и индивидуальный подход к каждому клиенту.<br /><br />
+
+						Drivemaster предлагает уникальные услуги по подбору автомобилей, чтобы каждый клиент мог найти идеальный автомобиль.
+					</div>
+				</div>
+				<div class="our-beliefs-card-image"><img src="/assets/images/diagnostic.jpg" alt="" /></div>
+			</div>
+		</main>
+
+		<div class="our-team">
+			<div class="our-team-text">
+				<div class="our-team-title">Наша команда</div>
+				<div class="our-team-desciption">Drivemaster была основана группой профессионалов с большим опытом работы в автомобильной индустрии.</div>
+			</div>
+		</div>
+
+		<div class="about-us-form-wrapper">
+			<svg class="about-us-rectangles" width="404" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-squares">
+				<title id="svg-squares">squares</title>
+				<defs>
+					<pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+						<rect x="0" y="0" width="4" height="4" class="text-primary" fill="currentColor"></rect>
+					</pattern>
+				</defs>
+				<rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"></rect>
+			</svg>
+			<div class="page-container">
+				<div class="content-container">
+					<h1 class="main-heading">Начните поиск автомобиля с Drivemaster</h1>
+					<p class="testimonial">"Drivemaster - это отличный сервис для тех, кто хочет быстро и без проблем найти автомобиль. Я очень доволен их работой." - Александр</p>
+					<button class="main-info-open-modal-btn" onclick="window.location.href='contacts.html'">Оставить заявку</button>
+				</div>
+			</div>
+		</div>
+
 		<footer class="footer">
 			<nav class="footer-menu">
 				<div class="menu-item footer-item"><a href="index.html">Главная</a></div>
-				<div class="menu-item footer-item"><a href="">Услуги</a></div>
-				<div class="menu-item footer-item"><a href="">О нас</a></div>
-				<div class="menu-item footer-item"><a href="">Контакты</a></div>
+				<div class="menu-item footer-item"><a href="services.html">Услуги</a></div>
+				<div class="menu-item footer-item"><a href="about-us.html">О нас</a></div>
+				<div class="menu-item footer-item"><a href="contacts.html">Контакты</a></div>
 			</nav>
 			<div class="all-rights">© All rights reserved.</div>
 		</footer>
 
 		<script src="../srcipts/theme.js"></script>
 		<script src="../srcipts/burger.js"></script>
-</body>
+	</body>
 </html>

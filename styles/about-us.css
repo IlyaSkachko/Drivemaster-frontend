@@ -1,0 +1,155 @@
+.client-trust-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    padding: 96px 64px;
+    border: 1px solid var(--other-text-color);
+    border-radius: 15px;
+    max-width: 1216px;
+    width: 100%;
+    background: #1a2a43;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.client-trust-card-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.client-trust-card-desciption {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--other-text-color);
+    max-width: 576px;
+    text-align: center;
+}
+
+.client-trust-card-stars {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    font-size: 50px;
+}
+
+.our-beliefs-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 150px;
+}
+
+.our-beliefs-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.our-beliefs-card-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.our-beliefs-card-desciption {
+    font-size: 16px;
+    color: var(--other-text-color);
+}
+
+.our-beliefs-card-image {
+    max-width: 592px;
+}
+
+.our-team {
+    margin-top: 100px;
+    padding: 128px 20px;
+    background: #1a2a43;
+}
+
+.our-team-text {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-team-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.our-team-desciption {
+    max-width: 600px;
+    font-size: 16px;
+    color: #7f95a7;
+}
+
+.about-us-form-wrapper {
+    position: relative;
+}
+
+.about-us-rectangles {
+    opacity: 20%;
+    transform: rotate(5deg);
+    position: absolute;
+    bottom: 50px;
+    left: 600px;
+}
+
+@media (max-width: 1000px) {
+    .about-us-rectangles {
+        left: 0px;
+    }
+}
+
+@media (max-width: 840px) {
+    .about-us-rectangles {
+        bottom: 250px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 750px) {
+    .our-beliefs-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 500px;
+        margin: 150px auto 0 auto;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .client-trust-card-stars {
+        font-size: 48px;
+    }
+
+    .about-us-rectangles {
+        bottom: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .client-trust-card-stars {
+        font-size: 36px;
+        gap: 20px;
+    }
+
+    .about-us-rectangles {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .client-trust-card-stars {
+        font-size: 30px;
+        gap: 20px;
+    }
+}

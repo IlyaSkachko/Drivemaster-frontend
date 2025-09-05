@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="../styles/main.css" />
 		<link rel="stylesheet" href="../styles/header.css" />
 		<link rel="stylesheet" href="../styles/main-info.css" />
+		<link rel="stylesheet" href="../styles/contacts.css" />
 		<link rel="stylesheet" href="../styles/search-car.css" />
 		<link rel="stylesheet" href="../styles/footer.css" />
 
@@ -27,8 +28,8 @@
 
 			<nav class="header-menu">
 				<div class="menu-item"><a href="services.html">Услуги</a></div>
-				<div class="menu-item"><a href="">О нас</a></div>
-				<div class="menu-item"><a href="">Контакты</a></div>
+				<div class="menu-item"><a href="about-us.html">О нас</a></div>
+				<div class="menu-item"><a href="contacts.html">Контакты</a></div>
 			</nav>
 
 			<div id="toggle-theme" class="toggle-theme">
@@ -39,6 +40,55 @@
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</header>
+
+		<main class="content">
+			<svg class="rectangles" width="404" height="404" fill="none" viewBox="0 0 404 404" role="img" aria-labelledby="svg-squares">
+				<title id="svg-squares">squares</title>
+				<defs>
+					<pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+						<rect x="0" y="0" width="4" height="4" class="text-primary" fill="currentColor"></rect>
+					</pattern>
+				</defs>
+				<rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"></rect>
+			</svg>
+
+			<div class="main-info">
+				<div class="main-info-title">Связаться с нами</div>
+				<div class="main-info-description">Запишитесь на встречу или звонок с нашей командой.</div>
+			</div>
+
+			<form action="" class="contact-us">
+				<label for="" class="contact-us-label">
+					Имя*
+					<input type="text" class="contact-us-input" placeholder="Имя..." required />
+				</label>
+				<label for="" class="contact-us-label">
+					Фамилия*
+					<input type="text" class="contact-us-input" placeholder="Фамилия..." required />
+				</label>
+				<label for="" class="contact-us-label">
+					Email*
+					<input type="text" class="contact-us-input" placeholder="Email..." required />
+				</label>
+				<label for="" class="contact-us-label">
+					Номер телефона*
+					<input type="text" class="contact-us-input" placeholder="Номер телефона..." required />
+				</label>
+				<label for="" class="contact-us-label">
+					Telegram
+					<input type="text" class="contact-us-input" placeholder="@username..." />
+				</label>
+				<label for="" class="contact-us-label">
+					Ваш вопрос
+					<textarea type="text" class="contact-us-input question" placeholder="Ваш вопрос..." ></textarea>
+				</label>
+				<label for="" class="contact-us-label label-checkbox">
+					<input type="checkbox" class="contact-us-checkbox" />
+					Я согласен с политикой конфиденциальности
+				</label>
+				<buttom type="button" class="contact-us-send-btn">Отправить</buttom>
+			</form>
+		</main>
 
 		<footer class="footer">
 			<nav class="footer-menu">
