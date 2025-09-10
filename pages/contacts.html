@@ -22,6 +22,14 @@
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	</head>
+
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span id="modal-close" class="modal-close">&times;</span>
+			<p id="modal-message"></p>
+		</div>
+	</div>
+
 	<body>
 		<header class="header">
 			<div class="header-title"><a href="index.html">Drivemaster</a></div>
@@ -57,36 +65,50 @@
 				<div class="main-info-description">Запишитесь на встречу или звонок с нашей командой.</div>
 			</div>
 
-			<form action="" class="contact-us">
-				<label for="" class="contact-us-label">
+			<form class="contact-us">
+				<label for="name" class="contact-us-label">
 					Имя*
-					<input type="text" class="contact-us-input" placeholder="Имя..." required />
+					<input id="name" type="text" class="contact-us-input" placeholder="Имя..." required />
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label">
+
+				<label for="surname" class="contact-us-label">
 					Фамилия*
-					<input type="text" class="contact-us-input" placeholder="Фамилия..." required />
+					<input id="surname" type="text" class="contact-us-input" placeholder="Фамилия..." required />
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label">
+
+				<label for="email" class="contact-us-label">
 					Email*
-					<input type="text" class="contact-us-input" placeholder="Email..." required />
+					<input id="email" type="email" class="contact-us-input" placeholder="Email..." required />
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label">
+
+				<label for="phone" class="contact-us-label">
 					Номер телефона*
-					<input type="text" class="contact-us-input" placeholder="Номер телефона..." required />
+					<input id="phone" type="tel" class="contact-us-input" placeholder="Номер телефона..." required />
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label">
+
+				<label for="telegram" class="contact-us-label">
 					Telegram
-					<input type="text" class="contact-us-input" placeholder="@username..." />
+					<input id="telegram" type="text" class="contact-us-input" placeholder="@username..." />
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label">
+
+				<label for="question" class="contact-us-label">
 					Ваш вопрос
-					<textarea type="text" class="contact-us-input question" placeholder="Ваш вопрос..." ></textarea>
+					<textarea id="question" class="contact-us-input question" placeholder="Ваш вопрос..."></textarea>
+					<div class="error-message"></div>
 				</label>
-				<label for="" class="contact-us-label label-checkbox">
-					<input type="checkbox" class="contact-us-checkbox" />
+
+				<label for="privacy" class="contact-us-label label-checkbox">
+					<input id="privacy" type="checkbox" class="contact-us-checkbox" required />
 					Я согласен с политикой конфиденциальности
+					<div class="error-message"></div>
 				</label>
-				<buttom type="button" class="contact-us-send-btn">Отправить</buttom>
+
+				<button type="submit" class="contact-us-send-btn">Отправить</button>
 			</form>
 		</main>
 
@@ -102,5 +124,11 @@
 
 		<script src="../srcipts/theme.js"></script>
 		<script src="../srcipts/burger.js"></script>
+		<script src="../srcipts//send-form.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				new OrderForm(".contact-us", "api/orders");
+			});
+		</script>
 	</body>
 </html>
